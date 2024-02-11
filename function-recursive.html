@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function recrsive</title>
+</head>
+<body>
+<script>
+
+    function recursive (value){
+        let result = 1;
+        for (let i = 1; i <= value; i++){
+            result *= i;
+            document.writeln(result)
+        }
+        return result;
+    }
+    recursive(5);
+    
+    function factorialRecursive(value) {
+    if (value === 1) {
+        return 1;
+        
+    } else {
+        return value * factorialRecursive(value - 1);
+    }        
+    }
+    let fact = factorialRecursive(5)
+    document.writeln(`<p>factorial recursive : ${fact}</p>`);
+
+</script>
+</body>
+</html>
