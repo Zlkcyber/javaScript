@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter</title>
+</head>
+<body>
+<script>
+
+    function sum(name, ...data){
+        let total = 0
+        for (const item of data){
+            total += item;
+        }
+        document.writeln(`<p>Total ${name} is ${total}</p>`);
+    }
+
+    sum("orange", 2,3,4,5,5,3,21,9);
+    sum("apple", 5,3,21,9);
+    sum("banana", 2,3,4,21,9);
+
+</script>
+</body>
+</html>
