@@ -20,8 +20,19 @@
     sum("apple", 5,3,21,9);
     sum("banana", 2,3,4,21,9);
 
+    // data array
     const values = [32,54,21,44,76]
     sum("Fruit", ...values);
+
+    function fruits(...fruit) {
+        let total = 0;
+        for (const item of fruit) {
+            total += fruit;
+        }
+        document.writeln(`<p>Total ${fruit} is ${total}</p>`);
+    }
+    const number = [3,5,7,1,9,4];
+    fruits(...number);
 
 </script>
 </body>
